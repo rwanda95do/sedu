@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+@font-face {
+    font-family: 'EF_jejudoldam';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: "EF_jejudoldam";
+}
+#content {
+	width: 50%;
+	margin: 0 auto;
+}
+#section1 {
+	background-image: linear-gradient(to top, #FFA500 , #FFE5B4);
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+button {
+	background-color: white;
+	border: none;
+	margin: 10 auto;
+	border-radius: 2px;
+	padding: 10px 20px;
+	
+}
+</style>
+</head>
+<body>
+<div id="content">
+	<div id="title">
+		<h1>펜션 예약 서비스</h1>
+		<hr>
+	</div>
+	<div id="section1">
+		<form method="post" action="/sedu/reservation">
+			<p>예약자명 : <input name="name" type="text"></p>
+			<p>예약암호 : <input name="password" type="password"></p>
+			<p>
+				룸선택 : 
+				<input name="room" type="radio" value="둘리">둘리
+				<input name="room" type="radio" value="희동">희동
+				<input name="room" type="radio" value="도우너">도우너
+				<input name="room" type="radio" value="또치">또치
+			</p>
+			<p>
+				추가요청사항 : 
+				<input name="inquir" type="checkbox" value="바베큐">바베큐
+				<input name="inquir" type="checkbox" value="수영장">수영장
+				<input name="inquir" type="checkbox" value="낚시">낚시
+				<input name="inquir" type="checkbox" value="조식">조식
+			</p>
+			<p>예약날짜 : <input name="date" type="date"></p>
+			
+			<hr>
+			<div id="btnDiv">
+				<button type="submit">보내기</button>
+				<button type="submit">초기화</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

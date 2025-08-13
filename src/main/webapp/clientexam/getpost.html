@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>JSP 요청</h1>
+<hr>
+
+<a href="/sedu/jspexam/exam4.jsp?name=유니코">GET방식 요청</a>
+<br>
+<form method="get" action="/sedu/jspexam/exam4.jsp">
+	<input name="name" value="유니코(get)" readonly="readonly">
+	<input type="submit" value="GET방식 요청">
+</form>
+
+<hr>
+<form method="post" action="/sedu/jspexam/exam4.jsp">
+	<input name="name" value="유니코(post)" readonly="readonly">
+	<input type="submit" value="POST방식 요청">
+</form>
+
+</body>
+</html>

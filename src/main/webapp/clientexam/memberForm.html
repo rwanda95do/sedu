@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	h1 {
+		font-family: 'SBAggroB';
+		text-shadow: 5px 5px 8px gray;
+	}
+	
+	input {
+		padding: 5px;
+		border: 3px solid black;
+		border-radius: 10px;
+	}
+</style>
+</head>
+<body>
+<h1>회원 정보를 입력하십시오</h1>
+<hr>
+<form method="post" action="/sedu/MemberServlet">
+	<input name="name" type="text" placeholder="이름을 입력하세요"> <br>
+	<input name="phone" type="text" placeholder="전화번호을 입력하세요"> <br>
+	<input name="id" type="text" placeholder="계정을 입력하세요"> <br>
+	<input name="password" type="password" placeholder="패스워드을 입력하세요"> <br>
+
+	<input type="submit" value="등록">
+	<input type="reset" value="재작성">
+</form>
+</body>
+</html>
